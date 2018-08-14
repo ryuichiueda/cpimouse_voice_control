@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find raspimouse_ros_2)/launch/raspimouse.launch" /> 
+  <node pkg="cpimouse_voice_control" name="julius" type="julius.py" output="screen" required="true" />
+  <node pkg="cpimouse_voice_control" name="voice_to_command" type="voice_to_command.py" output="screen" required="true" />
+</launch>
+
